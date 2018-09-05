@@ -1,0 +1,95 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	section.home_banner_1
+
+		.item.img
+			.title
+				.container
+					.row
+						.col
+							h1  Chúng tôi là
+								Span.blockh1 FullStack Vietnam
+							p Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
+							a.btn.btn-view XEM CHI TIẾT
+	section.home_banner_2
+		.container
+			article.list-banner.owl-carousel.owl-theme
+				a(href="javascript:void(0)").item
+					.title
+						h2 USA'S HOTTEST JEANS
+						p SHOPPING NOW
+				a(href="javascript:void(0)").item
+					.title
+						h2 USA'S HOTTEST JEANS
+						p SHOPPING NOW
+				a(href="javascript:void(0)").item
+					.title
+						h2 USA'S HOTTEST JEANS
+						p SHOPPING NOW
+	section.home_shop
+		.container
+			.title
+				h2 FULLSTACK VIETNAM
+			.row
+				-for(x=1;x<5;x++)
+					.col-6.col-md-3.mb-md-4.item
+						a(href="javascript:void(0)")
+							figure
+								.blockimg
+									img.img-fluid(src="./img/home_people_"+x+".png", alt="")
+								figcaption
+									h3 Trung tâm đào tạo IT chuyên nghiệp
+									span.price $36.59
+	section.home_banner_3
+		.container
+			.list
+				a(href="javascript:void(0)").item
+					.title
+						h2 HẠNH PHÚC PHÍA SAU
+						p USA'S HOTTEST JEANS
+					.sale
+						span SALE
+						span 20%
+	section.home_banner_4
+		.container
+			.row
+				.col-lg-5
+					img.img-fluid(src="./img/home_banner_4.png", alt="", srcset="")
+				.col-lg-7.conten
+					h2 HẠNH PHÚC PHÍA SAU
+					p Want the most stylish designs in metrosexual and gay apparel? Looking for the sexiest gay outfits and pride outfits? Differio has the trendiest gay pride apparel from gay pride clothing to lgbt clothing. Shop our gay menswear collection for the hottest gay pride outfits in gay clothing for men.
+	section.home_client
+		.container
+			article.client-list
+				.titles
+					h2 FULLSTACK VIETNAM
+				.owl-for.owl-carousel.owl-theme
+					.item
+						img(src="./img/home_client_1.png", alt="")
+					.item
+						img(src="./img/home_client_2.png", alt="")
+					.item
+						img(src="./img/home_client_3.png", alt="")
+					.item
+						img(src="./img/home_client_4.png", alt="")
+					.item
+						img(src="./img/home_client_5.png", alt="")
+					.item
+						img(src="./img/home_client_6.png", alt="")
+					.item
+						img(src="./img/home_client_6.png", alt="")
+
+
+
+
+
+
+	

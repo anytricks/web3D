@@ -1,0 +1,89 @@
+footer
+    .home_footer
+        color: #afafaf
+        background: $footer
+        .social
+            display: flex
+            justify-content: center
+            margin-top: 2rem
+            a
+                display: inline-block
+                width: 2.64rem
+                height: 2.64rem
+                +lh(2.64rem)
+                text-align: center
+                border-radius: 50%
+                color: #000
+                background: #9b9b9b
+                text-decoration: none
+                transition: 0.2s all ease-in-out
+                &:first-child
+                    margin-right: 1rem
+                &:hover
+                    background: $vang
+        h4
+            color: $vang
+        p
+            margin-bottom: 0
+        .link2
+            padding-left: 1rem
+        li
+            a
+                text-decoration: none
+                color: #afafaf
+    .copyright
+        +pad(1.5rem 0)
+        background: $vang
+        text-align: center
+        .item
+            display: flex
+            align-items: center
+            flex-direction: column
+        .input-group
+            margin-top: 1rem
+            max-width: 350px
+            position: relative
+            background: #000000
+            height: 3.07rem
+            +pad(.21rem .21rem .21rem 1rem )
+            input
+                background: none
+                border: none
+                width: 85%
+                color: #fff
+                +placeholder()
+                    font-style: italic
+                    +fz(1rem)
+                    +fw(400)
+                    opacity: .5
+            .btn-send
+                +pos(abs , 50% 4px null null)
+                +transform(translateY(-50%))
+    +media-breakpoint-down(md)
+        .col-12.item
+            margin-bottom: 1rem
+        
+    +media-breakpoint-up(lg)
+        .footer
+            .social
+                justify-content: flex-end
+                margin-top: 0
+                a
+                    &:hover
+                        background: $vang
+            
+        .copyright
+            .item
+                align-items: center
+                flex-direction: row
+                justify-content: space-between
+                .input-group
+                    margin-top: 0
+                p
+                    margin-bottom: 0
+                    +fz(1.2rem)
+                a
+                    +transition(all .5s ease-in-out)
+                    &:hover
+                        opacity: .5
+        
